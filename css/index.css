@@ -67,25 +67,52 @@ h1, h2, h3, h4, h5 {
 
 
 
-
-body{
-	width: 880px;
-	margin: 0 auto;
+/* site width and p font style */
+@media (min-width: 800px){
+    body{
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+    }
 
 }
+
 p {
 	line-height: 1.25;
 	font-family: 'Raleway', sans-serif;
 }
+
+@media (max-width: 800px){
+    body {
+        width: 100%;
+    }
+
+}
+
+/* header/navbar */
 header {
 	background: lightslategray;
   	border-radius: 3px;
-  	width: 880px;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 }
+@media (min-width: 800px){
+    header {
+        max-width: 880px;
+        width: 100%;
+    }
+
+}
+@media (max-width: 800px){
+    header {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
 header a:hover {
 	background: darkslategray;
 }
@@ -95,13 +122,18 @@ header a {
 header img {
 	margin: 5px;
 }
+
 nav {
   	display: flex;
-	align-content: center;
-
 	height: 48px;
 	animation-name: nav;
 	animation-duration: 2s;
+}
+@media (max-width: 800px){
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 @keyframes nav {
 	0% {opacity: 0;}
@@ -123,6 +155,8 @@ nav a:hover {
 	50% {color: steelblue;}
 	100% {color: lightsteelblue;}
 }
+
+/* services header */
 .services-header-img {
 	margin-top: 12px;
 }
@@ -132,6 +166,11 @@ nav a:hover {
 .service-text {
 	padding: 20px 0;
 }
+#services-header-img {
+	margin: 0 auto;
+}
+
+/* masthead */
 .masthead {
 	margin-bottom: 60px;
 	display: flex;
@@ -146,8 +185,11 @@ nav a:hover {
 	margin-top: 90px;
 	margin-left: 60px;
 }
-#services-header-img {
-	margin: 0 auto;
+@media (max-width: 800px){
+    .masthead img {
+        display: none;
+    }
+
 }
 button {
 	background: white;
@@ -172,6 +214,8 @@ button:hover {
 	100% {color: steelblue;}
 	100% {border-color: steelblue;}
 }
+
+/* main content */
 .main-content {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -181,13 +225,19 @@ button:hover {
 	justify-content: space-between;
 }
 #c1, #c2 {
-	width: 430px;
-	margin: 20px 0;
-}
-#c3, #c4, #c5 {
-	width: 286px;
+	width: 48%;
 	margin: 20px auto;
 }
+#c3, #c4, #c5 {
+	width: 32%;
+	margin: 20px auto;
+}
+.middle-img {
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+/* services content */
 .service-content {
 	display: flex;
 	flex-wrap: wrap;
@@ -218,10 +268,8 @@ button:hover {
 	margin: 10px 0;
 	border-radius: 5px;
 }
-.middle-img {
-	margin: 0 auto;
-	border: 1px solid black;
-}
+
+/* info section */
 .info-text {
 	width: 420px;
 }
@@ -235,6 +283,8 @@ button:hover {
 	padding-left: 10px;
 
 }
+
+/* footer */
 .contact p {
 	margin-bottom: 14px;
 }
