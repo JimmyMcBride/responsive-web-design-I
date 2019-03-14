@@ -1,3 +1,177 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+
+
+
+/* Your code starts here! */
+
+
+
+
+
+body{
+	width: 876px;
+	margin: 0 auto;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+}
+header img {
+	margin-left: 670px;
+	display: inline-block;
+	position: fixed;
+	margin-top: 5px;
+}
+nav {
+  	background: lightslategray;
+  	border-radius: 3px;
+	position: fixed;
+	width: 876px;
+	height: 50px;
+	animation-name: nav;
+	animation-duration: 2s;
+}
+@keyframes nav {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+nav a {
+	padding: 15px 10px;
+	display: inline-block;
+	text-decoration: none;
+	color: whitesmoke;
+	margin: 0px 12px;
+	vertical-align: middle;
+	
+}
+nav a:hover {
+	color: #111;
+	animation-name: navhover;
+	animation-duration: .5s;
+}
+@keyframes navhover {
+	0% {color: whitesmoke;}
+	50% {color: steelblue;}
+	100% {color: #111;}
+}
+.masthead {
+	margin-bottom: 60px;
+	
+}
+.masthead h1 {
+	font-size: 76px;
+	text-align: center;
+	margin: 0px 10px 0px 100px;
+	display: inline-block;
+	
+}
+button {
+	background: white;
+	border: 1px solid black;
+	box-sizing: content-box;
+	padding: 3px 30px;
+	margin: 5px 0px 0px 80px;
+	font-size: 16px;
+	font-family: 'Titillium Web', sans-serif;
+	display: block;
+	font-weight: bold;
+
+}
+button:hover {
+	color: lightsteelblue;
+	border-color: lightsteelblue;
+	animation-name: buttonhover;
+	animation-duration: 1s;
+}
+@keyframes buttonhover {
+	0% {color: black;}
+	0% {border-color: black;}
+	100% {color: lightsteelblue;}
+	100% {border-color: lightsteelblue;}
+}
+.masthead img {
+	display: inline-block;
+	margin-top: 90px;
+	margin-left: 60px;
+}
+.main-content {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-bottom: 30px;
+}
+.about div {
+	width: 400px;
+	display: inline-block;
+	margin: 20px 30px 20px 0px;
+}
+.service div {
+	width: 250px;
+	display: inline-block;
+	margin: 20px 39px 20px 0px;
+}
+.contact p {
+	margin-bottom: 14px;
+}
+#copy-right {
+	text-align: center;
+	margin-bottom: 60px;
+}
