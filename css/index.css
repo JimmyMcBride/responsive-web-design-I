@@ -112,6 +112,15 @@ header {
         align-items: center;
     }
 }
+@media (max-width: 500px){
+    header {
+        width: 100%;
+        height: auto;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
 
 header a:hover {
 	background: darkslategray;
@@ -122,17 +131,26 @@ header a {
 header img {
 	margin: 5px;
 }
-
 nav {
-  	display: flex;
-	height: 48px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
 	animation-name: nav;
 	animation-duration: 2s;
 }
-@media (max-width: 800px){
+@media (min-width: 800px){
     nav {
-        display: flex;
-        justify-content: space-around;
+        height: 48px;
+    }
+}
+@media (max-width: 500px){
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        width: 100%;
+        text-align: center;
     }
 }
 @keyframes nav {
@@ -143,7 +161,7 @@ nav a {
 	padding: 15px 10px;
 	text-decoration: none;
 	color: whitesmoke;
-	margin: 0px 12px;
+
 }
 nav a:hover {
 	color: lightsteelblue;
@@ -191,6 +209,12 @@ nav a:hover {
     }
 
 }
+@media (max-width: 500px){
+    .masthead h1 {
+        margin-top: 380px;
+    }
+
+}
 button {
 	background: white;
 	border: 1px solid black;
@@ -219,7 +243,7 @@ button:hover {
 .main-content {
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	margin: 30px 0;
+    margin: 0 30px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -234,7 +258,23 @@ button:hover {
 }
 .middle-img {
 	margin: 0 auto;
-	border: 1px solid black;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 500px){
+    .main-content {
+        flex-direction: column;
+        margin: 0;
+    }
+    #c1, #c2 {
+        width: 95%;
+        margin: 20px auto;
+    }
+    #c3, #c4, #c5 {
+        width: 95%;
+        margin: 20px auto;
+    }
 }
 
 /* services content */
